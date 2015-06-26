@@ -22,6 +22,8 @@
 		5BD3405B1B1884D600A6CDE9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD340581B1884D600A6CDE9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BD3405C1B1884D600A6CDE9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD340591B1884D600A6CDE9 /* RealmSwift.framework */; };
 		5BD3405D1B1884D600A6CDE9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD340591B1884D600A6CDE9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2981B201B3C8E4100E69CBC /* NoteDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2981B1F1B3C8E4100E69CBC /* NoteDisplayViewController.swift */; };
+		B2A8075D1B3B35DE00A9D303 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8075C1B3B35DE00A9D303 /* NewNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		5BD3403A1B18819B00A6CDE9 /* ConvenienceKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConvenienceKit.xcodeproj; path = External/ConvenienceKit/ConvenienceKit.xcodeproj; sourceTree = "<group>"; };
 		5BD340581B1884D600A6CDE9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Realm.framework; sourceTree = "<group>"; };
 		5BD340591B1884D600A6CDE9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../RealmSwift.framework; sourceTree = "<group>"; };
+		B2981B1F1B3C8E4100E69CBC /* NoteDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDisplayViewController.swift; sourceTree = "<group>"; };
+		B2A8075C1B3B35DE00A9D303 /* NewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				5B7FD42C1B189D2C0088C25E /* NotesViewController.swift */,
+				B2A8075C1B3B35DE00A9D303 /* NewNoteViewController.swift */,
+				B2981B1F1B3C8E4100E69CBC /* NoteDisplayViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				TargetAttributes = {
 					5BD33FDB1B187F5D00A6CDE9 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8254BLK762;
 					};
 					5BD33FF01B187F5D00A6CDE9 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -368,6 +375,8 @@
 				5B7FD42F1B189D2C0088C25E /* NotesViewController.swift in Sources */,
 				5B7FD4351B18A1FC0088C25E /* NoteTableViewCell.swift in Sources */,
 				5B7FD4331B18A15D0088C25E /* Note.swift in Sources */,
+				B2981B201B3C8E4100E69CBC /* NoteDisplayViewController.swift in Sources */,
+				B2A8075D1B3B35DE00A9D303 /* NewNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +510,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -509,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -516,6 +528,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -524,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
