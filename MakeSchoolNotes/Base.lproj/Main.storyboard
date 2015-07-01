@@ -167,7 +167,7 @@
                                 </items>
                             </toolbar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pD-ZG-uSG">
-                                <rect key="frame" x="0.0" y="71" width="600" height="485"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAv-mb-583" customClass="TextView" customModule="ConvenienceKit">
                                         <rect key="frame" x="8" y="46" width="584" height="433"/>
@@ -205,7 +205,7 @@
                             <constraint firstItem="J4s-Wa-Bxb" firstAttribute="bottom" secondItem="gvi-bl-6aZ" secondAttribute="top" id="gCA-Qi-cmg"/>
                             <constraint firstItem="1pD-ZG-uSG" firstAttribute="leading" secondItem="J4s-Wa-Bxb" secondAttribute="leading" id="jJI-iM-mln"/>
                             <constraint firstItem="J4s-Wa-Bxb" firstAttribute="top" secondItem="1pD-ZG-uSG" secondAttribute="bottom" id="tDw-07-It9"/>
-                            <constraint firstItem="1pD-ZG-uSG" firstAttribute="top" secondItem="gOZ-Xp-lAO" secondAttribute="bottom" constant="71" id="tjh-oR-0P8"/>
+                            <constraint firstItem="1pD-ZG-uSG" firstAttribute="top" secondItem="gOZ-Xp-lAO" secondAttribute="bottom" id="tjh-oR-0P8"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -213,6 +213,7 @@
                         <outlet property="contentTextView" destination="UAv-mb-583" id="CVT-RP-Jos"/>
                         <outlet property="deleteButton" destination="KAT-Ux-WuV" id="WYm-Qe-Y9K"/>
                         <outlet property="titleTextField" destination="f0d-ry-zJV" id="365-9I-xqL"/>
+                        <outlet property="toolbarBottomSpace" destination="gCA-Qi-cmg" id="Sv5-yO-tMb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dP-dE-knP" userLabel="First Responder" sceneMemberID="firstResponder"/>
